@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de CSS</title>
+
+    <!-- Archivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header id="inicio">
+        <h1>TechZone</h1>    
+        <p>Tu espacio para aprender tecnología</p>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- SECCIÓN DE BIENVENIDA -->
+        <section class="bienvenida">
+            <h2>Bienvenido a TechZone</h2>
+
+            <p>
+                Esta página fue creada para practicar diferentes propiedades
+                y estilos utilizando CSS.
+            </p>
+
+            <button>Conocer más</button>
+        </section>
+
+
+        <!-- SERVICIOS -->
+        <section id="servicios">
+            <h2>Nuestros servicios</h2>
+
+            <div class="contenedor-servicios">
+
+                <div class="tarjeta">
+                    <h3>Mantenimiento</h3>
+                    <p>
+                        Realizamos mantenimiento preventivo y correctivo
+                        para computadoras.
+                    </p>
+                    <button>Ver servicio</button>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Redes</h3>
+                    <p>
+                        Instalación y configuración de redes para hogares
+                        y pequeñas empresas.
+                    </p>
+                    <button>Ver servicio</button>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Desarrollo Web</h3>
+                    <p>
+                        Creamos páginas web utilizando HTML, CSS
+                        y otras tecnologías.
+                    </p>
+                    <button>Ver servicio</button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PRODUCTOS -->
+        <section id="productos">
+            <h2>Productos destacados</h2>
+
+            <article class="producto">
+                <h3>Laptop Gamer</h3>
+                <p>16 GB RAM | 1 TB SSD | RTX</p>
+                <p class="precio">$18,999 MXN</p>
+            </article>
+
+            <article class="producto">
+                <h3>Mouse Gamer</h3>
+                <p>RGB | 6 botones | USB</p>
+                <p class="precio">$499 MXN</p>
+            </article>
+
+            <article class="producto">
+                <h3>Teclado Mecánico</h3>
+                <p>RGB | Switch Blue | USB</p>
+                <p class="precio">$899 MXN</p>
+            </article>
+
+        </section>
+
+
+        <!-- INFORMACIÓN -->
+        <section class="informacion">
+
+            <h2>¿Por qué elegirnos?</h2>
+
+            <ul>
+                <li>Atención personalizada</li>
+                <li>Precios accesibles</li>
+                <li>Servicio profesional</li>
+                <li>Soporte técnico</li>
+            </ul>
+
+        </section>
+
+
+        <!-- FORMULARIO -->
+        <section id="contacto">
+
+            <h2>Contáctanos</h2>
+
+            <form>
+
+                <label for="nombre">Nombre:</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Escribe tu nombre"
+                >
+
+                <label for="correo">Correo electrónico:</label>
+                <input
+                    type="email"
+                    id="correo"
+                    placeholder="correo@ejemplo.com"
+                >
+
+                <label for="tema">Tema:</label>
+                <select id="tema">
+                    <option>Mantenimiento</option>
+                    <option>Redes</option>
+                    <option>Desarrollo Web</option>
+                    <option>Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea
+                    id="mensaje"
+                    rows="5"
+                    placeholder="Escribe tu mensaje..."
+                ></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>TechZone ©️ 2026</p>
+        <p>Página creada para practicar HTML y CSS</p>
+
+    </footer>
+
+</body>
+</html>

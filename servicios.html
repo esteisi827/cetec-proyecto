@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone - Servicios y Productos</title>
+    <!-- Archivo CSS externo -->
+    <link rel="stylesheet" href="producto.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>TechZone</h1>    
+        <p>Sección de Productos y Contacto</p>
+
+        <!-- Menú que permite regresar a la página principal o quedarse aquí -->
+        <nav class="nav-menu">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html" class="active">Servicios y Productos</a>
+        </nav>
+    </header>
+
+    
+    <main class="container">
+
+        <!-- PRODUCTOS DESTACADOS CON FLEXBOX -->
+        <section id="productos">
+            <h2>Productos mas destacados</h2>
+
+            <div class="contenedor-servicios">
+                <article class="tarjeta producto-card">
+                    <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80" alt="Laptop Gamer">
+                    <div class="card-content">
+                        <h3>Laptop Gamer</h3>
+                        <p>16 GB RAM | 1 TB SSD | RTX</p>
+                        <p class="precio">$18,999 MXN</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta producto-card">
+                    <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80" alt="Mouse Gamer">
+                    <div class="card-content">
+                        <h3>Mouse Gamer</h3>
+                        <p>RGB | 6 botones | USB</p>
+                        <p class="precio">$499 MXN</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta producto-card">
+                    <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80" alt="Teclado Mecánico">
+                    <div class="card-content">
+                        <h3>Teclado Mecánico</h3>
+                        <p>RGB | Switch Blue | USB</p>
+                        <p class="precio">$899 MXN</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- INFORMACIÓN -->
+        <section class="informacion">
+            <h2>¿Por qué elegirnos?</h2>
+            <ul class="lista-beneficios">
+                <li>Precios accesibles</li>
+                <li>Servicio profesional</li>
+                <li>Soporte técnico</li>
+            </ul>
+        </section>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+
+            <form class="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" placeholder="correo@ejemplo.com">
+
+                <label for="tema">Tema:</label>
+                <select id="tema">
+                    <option>Mantenimiento</option>
+                    <option>Redes</option>
+                    <option>Desarrollo Web</option>
+                    <option>Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
+
+                <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>TechZone ©️ 2026</p>
+        <p>Página creada para practicar HTML y CSS</p>
+    </footer>
+
+</body>
+
+   
